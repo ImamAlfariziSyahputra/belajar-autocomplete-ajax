@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar AutoComplete Ajax di SMK Taruna Bhakti</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #resultlist {
+    position: absolute;
+    width: 81%;
+    max-width: 89%;
+    cursor: pointer;
+    overflow-y: auto;
+    max-height: 400px;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+.link-class:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>PHP AJAX SMK Taruna Bhakti</h1>
+        <h1 align="center">PHP AJAX SMK Taruna Bhakti</h1>
         <h2 align="center" class="mb-4 mt-4">Autocomplete Dengan Gambar dan Ajax</h2>
         <div align="center">
             <input type="text" name="" id="nama_siswa" placeholder="Cari Nama Siswa..." class="form-control">
